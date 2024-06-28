@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    font-family: "Trirong", sans-serif;
+}
+
+/* Header Styles */
+nav ul li {
+    list-style: none;
+    margin: 0 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ #button{
+    margin: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ #element{
+    font-family: "Sofia", sans-serif;
+ }
+ /* Main Content Styles */
+main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.illustrations img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About Section Styles */
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+  
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.image-section {
+    flex: 0 0 40%;
+    max-width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.content {
+    flex: 0 0 55%;
+    max-width: 55%;
+    box-sizing: border-box;
+}
+  
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+  
+.article p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #333;
+}
+  
+.button a {
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: rgb(76, 58, 240);
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+  
+/* Footer Styles */
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .content, .image-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .image-section {
+        margin-top: 20px;
+    }
+}

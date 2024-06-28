@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container my-5" >
+  <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h1 class="display-4 " id="element"></h1>
+          <p class="lead">A Aspiring Data Analyst.</p>
+          <p class="lead">Analyzing data to extract actionable insights and drive business decisions.</p>
+          <!-- <a href="#contact" class="btn btn-primary" id="button">Get in Touch</a>-->
+        </div>
+      <div class="col-md-6">
+          <img src="{{ url_for('static', filename='images/d2.png') }}" alt="Data illustration" class="img-fluid">
+      </div>
+  </div>
+</div>
+<!-- About Section -->
+{% include 'about.html' %}
+
+<!-- Skills Section -->
+{% include 'skills.html' %}
+
+<!-- Project Section -->
+{% include 'projects.html' %}
+
+<!-- Certificate Section -->
+{% include 'certificates.html' %}
+
+{% endblock %}
